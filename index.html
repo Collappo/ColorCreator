@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ColorCreator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="header"></div>
+    <div id="container">
+        <div id="margin-container">
+            <div id="left">
+                <div id="colors-list">
+                    <!-- Example -->
+                    <div class="saved-color-panel">
+                        <div class="saved-color-logo"></div>
+                        <p class="saved-color-value">#000000</p>
+                    </div>
+                    <!-- Example -->
+                </div>
+            </div>
+            <div id="right">
+                <div id="main">
+                    <div id="main-content">
+                        <div id="main-left">
+                            <div id="color"></div>
+                        </div>
+                        <div id="main-right">
+                            <div id="color-inputs">
+                                <div class="color-input-panel">
+                                    <div class="target-color" style="background: #f00;"></div>
+                                    <input type="range" class="input-range" name="input-range-1" id="input-range-1"
+                                        max="255" min="0">
+                                    <input type="number" class="input-value" name="input-value-1" id="input-value-1"
+                                        class="target-color-value" max="255" min="0">
+                                </div>
+                                <div class="color-input-panel">
+                                    <div class="target-color" style="background: #0f0;"></div>
+                                    <input type="range" class="input-range" name="input-range-2" id="input-range-2"
+                                        max="255" min="0">
+                                    <input type="number" class="input-value" name="input-value-2" id="input-value-2"
+                                        class="target-color-value" max="255" min="0">
+                                </div>
+                                <div class="color-input-panel">
+                                    <div class="target-color" style="background-color: #00f;"></div>
+                                    <input type="range" class="input-range" name="input-range-3" id="input-range-3"
+                                        max="255" min="0">
+                                    <input type="number" class="input-value" name="input-value-3" id="input-value-3"
+                                        class="target-color-value" max="255" min="0">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="color-value"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer></footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
