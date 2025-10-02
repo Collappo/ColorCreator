@@ -4,11 +4,11 @@ const valueInput = document.querySelectorAll(".input-value")
 
 function RGBToHex(red, green, blue) {
     red = red.toString(16)
-    if (red.length === 1) { red = "0" + red }
+    red = (red.length === 1) ? "0" + red : red
     green = green.toString(16)
-    if (green.length === 1) { green = "0" + green }
+    green = (green.length === 1) ? "0" + green : green
     blue = blue.toString(16)
-    if (blue.length === 1) { blue = "0" + blue }
+    blue = (blue.length === 1) ? blue = "0" + blue : blue
     let hex = `#${red}${green}${blue}`
     return hex
 }
