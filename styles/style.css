@@ -57,7 +57,6 @@ body {
     background: #d8d8d8;
     transform: scale(0.99);
     box-shadow: 0 0 10px #00000023;
-    
 }
 
 .saved-color-logo {
@@ -118,8 +117,8 @@ body {
 #color {
     height: 80%;
     width: 80%;
-    border-radius: 20px;
-    background: #000;
+    border-radius: 25px;
+    background: #ffffff;
     transition: 200ms ease-in-out;
     box-shadow: 0 0 10px #0000002c;
 }
@@ -146,7 +145,10 @@ body {
     align-items: center;
     width: 100%;
     height: 30%;
-    justify-content: space-between;
+    justify-content: space-around;
+    background: #fcfcfc;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #0000002c;
 }
 
 .target-color {
@@ -162,6 +164,78 @@ body {
     border: 0;
     box-shadow: 0 0 10px #0000002c;
     text-align: center;
+    outline: 0;
+}
+
+#color-value-container {
+    display: flex;
+    width: 100%;
+    height: 30%;
+    justify-content: center;
+    align-items: center;
+}
+
+#color-value-container-left {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#save-color-value {
+    background: #6efa43;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #0000002c;
+    height: 60%;
+    width: 80%;
+    margin: 0;
+    font-size: 30px;
+    border: 0;
+    outline: 0;
+    text-align: center;
+    font-weight: 600;
+    text-shadow: 0 0 5px #acffac;
+    color: #ffffff;
+    padding: 0;
+    transition: 200ms ease-in-out;
+}
+
+#save-color-value:hover {
+    background: #60f321;
+    transform: scale(0.99);
+    box-shadow: 0 0 10px #00000023;
+}
+
+#color-value-container-right {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#color-value {
+    background: #fcfcfc;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #0000002c;
+    height: 60%;
+    width: 90%;
+    margin: 0;
+    font-size: 30px;
+    border: 0;
+    outline: 0;
+    text-align: center;
+    font-weight: 600;
+    color: #505050;
+    padding: 0;
+    transition: 200ms ease-in-out;
+}
+
+#color-value:hover {
+    background: #f0f0f0;
+    transform: scale(0.99);
+    box-shadow: 0 0 10px #00000023;
 }
 
 #main:hover {
