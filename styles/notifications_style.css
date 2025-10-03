@@ -1,22 +1,35 @@
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
-}
-
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
-}
-
 #notification-box {
+    z-index: 1;
     position: absolute;
+    top: anchor(center);
+    left: anchor(center);
     height: 7vh;
     width: 17vh;
-    background-color: aqua;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: 500ms cubic-bezier(0.42, 1.28, 0.65, 1);
+    opacity: 0;
+}
+
+#notification-text {
+    height: 100%;
+    margin: 0;
+    width: 70%;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: 600;
+}
+
+#notification-icon {
+    color: #fff;
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

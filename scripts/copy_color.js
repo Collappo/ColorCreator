@@ -2,9 +2,9 @@
 colorValue.addEventListener("click", () => {
     navigator.clipboard.writeText(colorValue.value)
         .then(() => {
-            showNotification("Copied!", true)
+            showCopiedNotification("COPIED!", true)
         },
             (error) => {
-                showNotification("Copy error!", false)
+                showCopiedNotification("COPY ERROR!", false)
             });
 })

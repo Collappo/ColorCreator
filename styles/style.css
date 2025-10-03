@@ -7,7 +7,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Poppins, sans-serif;
 }
 
 #page {
@@ -95,6 +95,7 @@ body {
 }
 
 #main {
+    z-index: 2;
     background: #efefef;
     height: 50%;
     width: 50%;
@@ -192,7 +193,7 @@ body {
 }
 
 #save-color-value {
-    background: #6efa43;
+    background: #22ff7a;
     border-radius: 20px;
     box-shadow: 0 0 10px #0000002c;
     height: 60%;
@@ -210,7 +211,7 @@ body {
 }
 
 #save-color-value:hover {
-    background: #60f321;
+    background: #1fe970;
     transform: scale(0.99);
     box-shadow: 0 0 10px #00000023;
 }
@@ -224,6 +225,7 @@ body {
 }
 
 #color-value {
+    z-index: 3;
     background: #fcfcfc;
     border-radius: 20px;
     box-shadow: 0 0 10px #0000002c;
