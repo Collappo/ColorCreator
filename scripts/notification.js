@@ -37,7 +37,7 @@ function showNotification(text, is_good_info, pinned_element) {
     element.style.transform = "500ms cubic-bezier(0.42, 1.28, 0.65, 1)"
 
     element.style.opacity = "1"
-    element.style.top = pinned_element.offsetTop + 70 + "px"
+    element.style.top = pinned_element.offsetTop + pinned_element.offsetHeight + 10 + "px"
 
     setTimeout(() => {
         element.style.top = pinned_element.offsetTop + "px"
