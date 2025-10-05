@@ -211,9 +211,11 @@ body {
 }
 
 #save-color-value:hover {
+    z-index: 3;
     background: #1fe970;
     transform: scale(0.99);
     box-shadow: 0 0 10px #00000023;
+    cursor: pointer;
 }
 
 #color-value-container-right {
