@@ -14,6 +14,7 @@ saveButton.addEventListener("click", () => {
     if (!flag) {
         localStorage.setItem(`color-${amountOfColors}`, colorToSave)
         localStorage.setItem("amount-of-colors", (amountOfColors + 1).toString())
+        listColors()
         showNotification("SAVED!", true, saveButton)
     }
 

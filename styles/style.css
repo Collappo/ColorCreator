@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
 body {
     box-sizing: border-box;
     margin: 0;
@@ -59,6 +61,8 @@ body {
     margin-bottom: 1.5vh;
     transition: 200ms ease-in-out;
     box-shadow: 0 0 10px #00000010;
+    display: flex;
+    justify-content: space-between;
 }
 .saved-color-panel:hover {
     background: #d8d8d8;
@@ -70,17 +74,33 @@ body {
     height: 4.5vh;
     width: 4.5vh;
     border-radius: 1.5vh;
-    background: #000000;
     margin-left: 1.5vh;
 }
 
 .saved-color-value {
     height: 5.5vh;
     display: flex;
-    align-items: center;  
-    margin-left: 4vh;
+    align-items: center;
+    text-align: center;
     color: #4e4e4e;
     font-weight: bolder;
+    font-size: 3vh;
+}
+
+.saved-color-panel-remover {
+    height: 4vh;
+    width: 4vh;
+    border-radius: 1.5vh;
+    background: #ff3232;
+    margin-right: 1.5vh;
+    transition: 200ms ease-in-out;
+
+}
+
+.saved-color-panel-remover:hover {
+    background: #f02f2f;
+    transform: scale(1.2);
+    box-shadow: 0 0 10px #00000023;
 }
 
 #right {
