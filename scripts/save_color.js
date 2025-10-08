@@ -1,8 +1,7 @@
 const saveButton = document.getElementById("save-color-value")
 
-let amountOfColors = parseInt(localStorage.getItem("amount-of-colors"))
-
 saveButton.addEventListener("click", () => {
+    let amountOfColors = parseInt(localStorage.getItem("amount-of-colors"))
     let colorToSave = colorValue.value
     let flag = false
     for (let i = 0; i <= amountOfColors; i++) {

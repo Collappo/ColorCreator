@@ -1,14 +1,13 @@
 function removeColorPanelAndSavedValue() {
     let colorValueToRemove = this.parentElement.children[1].innerText
-
     for (let i = 0; i < parseInt(localStorage.getItem("amount-of-colors")); i++) {
-        if (localStorage.getItem("color-" + i.toString()) === colorValueToRemove) {
-            localStorage.removeItem("color-" + i.toString())
+        if (localStorage.getItem(`color-${i}`) === colorValueToRemove) {
+            localStorage.removeItem(`color-${i}`)
+            break
         }
-        break
     }
 
-    listColors()
+    refreshColorsList()
 }
 function addRemoveColorPanelEvents() {
     let colorPanelsRemovers = document.querySelectorAll(".saved-color-panel-remover")
