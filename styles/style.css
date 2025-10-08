@@ -63,6 +63,7 @@ body {
     box-shadow: 0 0 10px #00000010;
     display: flex;
     justify-content: space-between;
+    cursor:pointer;
 }
 .saved-color-panel:hover {
     background: #d8d8d8;
@@ -94,7 +95,14 @@ body {
     background: #ff3232;
     margin-right: 1.5vh;
     transition: 200ms ease-in-out;
-
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vh;
+    outline: none;
+    border: none;
+    cursor: pointer;
 }
 
 .saved-color-panel-remover:hover {
@@ -132,7 +140,6 @@ body {
     height: 70%;
     width: 100%;
     display: flex;
-
 }
 
 #main-left {
@@ -262,6 +269,7 @@ body {
     color: #505050;
     padding: 0;
     transition: 200ms ease-in-out;
+    cursor: pointer;
 }
 
 #color-value:hover {

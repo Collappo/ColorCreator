@@ -5,7 +5,7 @@ notificationBox.style.top = document.getElementById("color-value").offsetTop + "
 
 function createNotification(parent) {
     let newNotificationBox = document.createElement("div")
-    let newNotificationIcon = document.createElement("spam")
+    let newNotificationIcon = document.createElement("span")
     let newNotificationText = document.createElement("p")
 
     newNotificationBox.classList.add("notification-box")

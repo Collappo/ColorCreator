@@ -1,10 +1,11 @@
 const colorsList = document.getElementById("colors-list")
 
 function createColorPanel(colorValue) {
+    if (!colorValue) return;
     let colorPanel = document.createElement("div")
     let colorPanelLogo = document.createElement("div")
     let colorPanelValue = document.createElement("p")
-    let colorPanelRemover = document.createElement("span")
+    let colorPanelRemover = document.createElement("button")
 
     colorPanel.classList.add("saved-color-panel")
     colorPanelLogo.classList.add("saved-color-logo")
@@ -15,6 +16,7 @@ function createColorPanel(colorValue) {
     colorPanelLogo.style.background = colorValue
     colorPanelValue.innerText = colorValue
     colorPanelRemover.innerHTML = "&#xe872"
+    // colorPanelRemover.style.color = "#ffffff"
 
     colorPanel.appendChild(colorPanelLogo)
     colorPanel.appendChild(colorPanelValue)
