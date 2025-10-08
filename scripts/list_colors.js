@@ -35,5 +35,3 @@ function listColors() {
         createColorPanel(e)
     })
 }
-
-listColors()
