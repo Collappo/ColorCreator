@@ -26,3 +26,7 @@ Interfejs został zaprojektowany tak, aby był maksymalnie czytelny i przyjemny 
 3. Kliknij **SAVE**, aby dodać go do palety po lewej stronie.
 
 ---
+
+<img style="border-radius: 15px" width="auto" height="auto" alt="Sreenshot from app" src="https://github.com/user-attachments/assets/5272710f-c94d-4342-bd5e-a4a39b031c5b" />
+
+
