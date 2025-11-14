@@ -1,8 +1,7 @@
 const saveButton = document.getElementById("save-color-value")
 
-let amountOfColors = parseInt(localStorage.getItem("amount-of-colors"))
-
 saveButton.addEventListener("click", () => {
+    let amountOfColors = parseInt(localStorage.getItem("amount-of-colors"))
     let colorToSave = colorValue.value
     let flag = false
     for (let i = 0; i <= amountOfColors; i++) {
@@ -14,12 +13,11 @@ saveButton.addEventListener("click", () => {
     if (!flag) {
         localStorage.setItem(`color-${amountOfColors}`, colorToSave)
         localStorage.setItem("amount-of-colors", (amountOfColors + 1).toString())
-        listColors()
+        refreshColorsList()
         showNotification("SAVED!", true, saveButton)
     }
 
     else {
         showNotification("Color can't be saved!", false, saveButton)
     }
-
 })
